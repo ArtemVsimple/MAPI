@@ -152,7 +152,7 @@ class PropertyStore
 
             //# a bit sus
             $guid_off = $flags >> 1;
-            $guid = $guids[$guid_off - 2];
+            $guid = $guids[$guid_off - 2] ?? null;
 
             /*$properties[] = [
                 'key' => new PropertyKey($prop, $guid),
